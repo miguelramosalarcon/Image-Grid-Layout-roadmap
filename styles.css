@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'SUSE', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100dvh;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid{
+    display: grid;
+  
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    width: 70dvw;
+    height: 90vh;
+    max-width: 1440px;
+    grid-template-areas: 
+    "beach mesa calle"
+    "beach door calle"
+    "living door playa"
+    ;
+    padding: 1rem;
+}
+
+.beach{grid-area: beach;}
+.mesa{grid-area: mesa;}
+.calle{grid-area: calle;}
+.door{grid-area: door;}
+.living{grid-area: living;}
+.playa{grid-area: playa;}
+
+@media screen and (width<= 890px){
+    .grid{
+        width: 90vw;
+        height: 60vh;
+    }
+}
+
+@media screen and (width<= 500px){
+    .grid{
+        width: 90dvw;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "beach"
+        "calle"
+        "door"
+        "living"
+        "mesa"
+        "playa"
+        ;
+    }
+}
