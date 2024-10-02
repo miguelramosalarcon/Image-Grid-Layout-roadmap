@@ -41,7 +41,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
-- [Pagina web](https://miguelramosalarcon.github.io/Image-Grid-Layout-roadmap/)
+- [Pagina web](https://miguelramosalarcon.github.io/Image-Grid-Layout-roadmap)
 - [Codigo fuente]()
 - [Link](https://roadmap.sh/projects/image-grid)
 > [!IMPORTANT]
